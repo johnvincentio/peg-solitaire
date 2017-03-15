@@ -1,10 +1,18 @@
 {
-    "dimitrk.exclude-indexing-filetree.excludeList": [
-        ".git(?!ignore)",
-        "dist",
-        "bower_components",
-        "node_modules",
-        "victories-large"
-    ]
+    "sass.enabled": false,
+    "path": {
+        "**/scss/*.scss": {
+            "sass.enabled": true,
+            "sass.options": {
+                "outputDir": "../css/",
+                "includePaths": [
+                    "**/scss/"
+                ],
+                "imagePath": null,
+                "sourceComments": true,
+                "outputStyle": "expanded"
+            },
+            "linting.collapsed": true
+        }
+    }
 }
-
