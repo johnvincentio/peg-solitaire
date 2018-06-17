@@ -88,41 +88,6 @@ $(function() {
 				handleNextMove();
 			}
 		}, delay);
-
-		//        setTimeout(function() {
-		//            from.addClass('highlighted');
-		//            via.addClass('highlighted');
-		//            to.addClass('highlighted');
-		////            console.log("stage 2; "+Date.now());
-		//
-		//            setTimeout(function() {
-		//                via.toggleClass('replay-occupied replay-empty');
-		////                console.log("stage 3; "+Date.now());
-		//
-		//                setTimeout(function() {
-		//                    to.toggleClass('replay-occupied replay-empty');
-		////                    console.log("stage 4; "+Date.now());
-		//
-		//                    setTimeout(function() {
-		//                        from.toggleClass('replay-occupied replay-empty');
-		////                        console.log("stage 4; "+Date.now());
-		//
-		//                        setTimeout(function() {
-		//                            from.removeClass('highlighted');
-		//                            via.removeClass('highlighted');
-		//                            to.removeClass('highlighted');
-		//                            if (! APP.model.victories.isNextMove()) {
-		//                                $restart.removeAttr('disabled');
-		//                                $play_game.removeAttr('disabled');
-		//                            }
-		//                            else {
-		//                                handleNextMove();
-		//                            }
-		//                        }, 150);
-		//                    }, 150);
-		//                }, 250);
-		//            }, 500);
-		//        }, 1000);
 	}
 
 	/* ----------------------------------- */
@@ -234,3 +199,39 @@ $(function() {
 
 	$main.trigger('init');
 });
+
+
+//        setTimeout(function() {
+//            from.addClass('highlighted');
+//            via.addClass('highlighted');
+//            to.addClass('highlighted');
+////            console.log("stage 2; "+Date.now());
+//
+//            setTimeout(function() {
+//                via.toggleClass('replay-occupied replay-empty');
+////                console.log("stage 3; "+Date.now());
+//
+//                setTimeout(function() {
+//                    to.toggleClass('replay-occupied replay-empty');
+////                    console.log("stage 4; "+Date.now());
+//
+//                    setTimeout(function() {
+//                        from.toggleClass('replay-occupied replay-empty');
+////                        console.log("stage 4; "+Date.now());
+//
+//                        setTimeout(function() {
+//                            from.removeClass('highlighted');
+//                            via.removeClass('highlighted');
+//                            to.removeClass('highlighted');
+//                            if (! APP.model.victories.isNextMove()) {
+//                                $restart.removeAttr('disabled');
+//                                $play_game.removeAttr('disabled');
+//                            }
+//                            else {
+//                                handleNextMove();
+//                            }
+//                        }, 150);
+//                    }, 150);
+//                }, 250);
+//            }, 500);
+//        }, 1000);

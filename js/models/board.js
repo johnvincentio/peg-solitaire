@@ -7,7 +7,7 @@ APP.model.collection = (function() {
 	return {
 		rows: [],
 
-		/*
+/*
 * initial setup of the board model
 */
 		init: function() {
@@ -29,7 +29,8 @@ APP.model.collection = (function() {
 				this.rows.push(row);
 			}
 		},
-		/*
+
+/*
 * Set status of all board tiles.
 *
 * Status: draggable = true for tiles that can be dragged, and to a tile allowing a drop.
@@ -45,10 +46,10 @@ APP.model.collection = (function() {
 						continue;
 					}
 					if (this.isOccupied(x, y)) {
-						//                    console.log("isOccupied; x "+x+" y "+y);
+						// console.log("isOccupied; x "+x+" y "+y);
 						item.droppable = false;
 						if (this.anyLegalFromMoves(x, y)) {
-							//                        console.log("anyLegalFromMoves; x "+x+" y "+y);
+							// console.log("anyLegalFromMoves; x "+x+" y "+y);
 							item.draggable = true;
 							item.up_move = this.isFromUpMoveLegal(x, y);
 							item.down_move = this.isFromDownMoveLegal(x, y);
@@ -58,10 +59,10 @@ APP.model.collection = (function() {
 							item.draggable = false;
 						}
 					} else {
-						//                    console.log("! isOccupied; x "+x+" y "+y);
+						// console.log("! isOccupied; x "+x+" y "+y);
 						item.draggable = false;
 						if (this.anyLegalToMoves(x, y)) {
-							//                        console.log("anyLegalToMoves; x "+x+" y "+y);
+							// console.log("anyLegalToMoves; x "+x+" y "+y);
 							item.droppable = true;
 						} else {
 							item.droppable = false;
@@ -77,7 +78,7 @@ APP.model.collection = (function() {
 			return this.rows[data.row][data.column].droppable;
 		},
 
-		/*
+/*
 * The board is treated as a square, so the function is used to determine which squares are
 * within the board
 */
@@ -105,7 +106,7 @@ APP.model.collection = (function() {
 			this.rows[row][column].occupied = true;
 		},
 
-		/*
+/*
 * Look for any legal move from (row, column)
 *
 * Return:
@@ -161,7 +162,7 @@ APP.model.collection = (function() {
 			);
 		},
 
-		/*
+/*
 * Look for any legal move to (row, column)
 *
 * Return:
@@ -217,7 +218,7 @@ APP.model.collection = (function() {
 			);
 		},
 
-		/*
+/*
 * Handle a User move.
 *
 * Parameters:
@@ -243,33 +244,29 @@ APP.model.collection = (function() {
 * 6c. Set to tile to occupied.
 */
 		moved: function(from_row, from_column, to_row, to_column) {
-			//        console.log(">>> moved; from ("+from_row+","+from_column+") to ("+to_row+","+to_column+")");
+			// console.log(">>> moved; from ("+from_row+","+from_column+") to ("+to_row+","+to_column+")");
 
 			if (
 				(from_row === to_row && Math.abs(from_column - to_column) === 2) ||
 				(from_column === to_column && Math.abs(from_row - to_row) === 2)
-			) {
-				// 1
-				//            console.log("still possible");
+			) { 		// 1
+				// console.log("still possible");
 			} else {
 				return false; // 1, not a valid drop request.
 			}
 			var int_row = from_row === to_row ? from_row : Math.min(from_row, to_row) + 1; // 2
 			var int_column = from_column === to_column ? from_column : Math.min(from_column, to_column) + 1;
 
-			if (!this.isLegal(from_row, from_column) || !this.isOccupied(from_row, from_column)) {
-				// 3
-				//            console.log("<<< moved (Error 1)");
+			if (!this.isLegal(from_row, from_column) || !this.isOccupied(from_row, from_column)) { // 3
+				// console.log("<<< moved (Error 1)");
 				return false;
 			}
-			if (!this.isLegal(int_row, int_column) || !this.isOccupied(int_row, int_column)) {
-				// 4
-				//            console.log("<<< moved (Error 2)");
+			if (!this.isLegal(int_row, int_column) || !this.isOccupied(int_row, int_column)) { // 4
+				// console.log("<<< moved (Error 2)");
 				return false;
 			}
-			if (!this.isLegal(to_row, to_column) || this.isOccupied(to_row, to_column)) {
-				// 5
-				//            console.log("<<< moved (Error 3)");
+			if (!this.isLegal(to_row, to_column) || this.isOccupied(to_row, to_column)) { // 5
+				// console.log("<<< moved (Error 3)");
 				return false;
 			}
 
@@ -277,7 +274,7 @@ APP.model.collection = (function() {
 			this.setEmpty(int_row, int_column); // 6b
 			this.setOccupied(to_row, to_column); // 6c
 
-			//        console.log("<<< moved (ok)");
+			// console.log("<<< moved (ok)");
 			return true;
 		},
 	};
