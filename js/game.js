@@ -13,7 +13,7 @@ $(function() {
 	var $main = $('main');
 	var $board = $('.js--board');
 	var $restart = $('.js--restart');
-	var $play_game = $('.js--play-game');
+	var $show_me = $('.js--show-me');
 
 	/* ----------------------------------- */
 	/* Custom events */
@@ -23,7 +23,7 @@ $(function() {
 		APP.model.collection.init();
 		APP.model.victories.init();
 		$restart.removeAttr('disabled');
-		$play_game.removeAttr('disabled');
+		$show_me.removeAttr('disabled');
 		$main.trigger('render');
 	});
 
@@ -38,7 +38,7 @@ $(function() {
 		APP.views.replay.renderBoard(APP.model.collection.rows, $board);
 
 		$restart.attr('disabled', 'disabled');
-		$play_game.attr('disabled', 'disabled');
+		$show_me.attr('disabled', 'disabled');
 		handleNextMove();
 	});
 
@@ -83,7 +83,7 @@ $(function() {
 			to.removeClass('highlighted');
 			if (!APP.model.victories.isNextMove()) {
 				$restart.removeAttr('disabled');
-				$play_game.removeAttr('disabled');
+				$show_me.removeAttr('disabled');
 			} else {
 				handleNextMove();
 			}
@@ -188,8 +188,8 @@ $(function() {
 		$main.trigger('init');
 	});
 
-	$play_game.on('click', function() {
-		// console.log("$play_game");
+	$show_me.on('click', function() {
+		// console.log("$show_me");
 		$main.trigger('play');
 	});
 
@@ -225,7 +225,7 @@ $(function() {
 //                            to.removeClass('highlighted');
 //                            if (! APP.model.victories.isNextMove()) {
 //                                $restart.removeAttr('disabled');
-//                                $play_game.removeAttr('disabled');
+//                                $show_me.removeAttr('disabled');
 //                            }
 //                            else {
 //                                handleNextMove();
