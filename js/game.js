@@ -32,7 +32,7 @@ $(function() {
 		APP.views.board.renderBoard(APP.model.collection.rows, $board);
 	});
 
-	$main.on('play', function() {
+	$main.on('show-me', function() {
 		APP.model.victories.getNextVictory();
 		APP.model.collection.init();
 		APP.views.replay.renderBoard(APP.model.collection.rows, $board);
@@ -190,7 +190,7 @@ $(function() {
 
 	$show_me.on('click', function() {
 		// console.log("$show_me");
-		$main.trigger('play');
+		$main.trigger('show-me');
 	});
 
 	/* ----------------------------------- */
