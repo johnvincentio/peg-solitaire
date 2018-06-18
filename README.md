@@ -41,3 +41,9 @@ Arrows:
 	.left_move
 
 
+svg.addEventListener('touchstart', startDrag);
+svg.addEventListener('touchmove', drag);
+svg.addEventListener('touchend', endDrag);
+svg.addEventListener('touchleave', endDrag);
+svg.addEventListener('touchcancel', endDrag);
+

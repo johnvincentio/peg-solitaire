@@ -31,7 +31,7 @@ body {
 }
 
 .clearfix:before, .clearfix:after {
-  content: "";
+  content: '';
   display: table;
 }
 .clearfix:after {
@@ -220,17 +220,17 @@ button:hover {
 
   .outside, .empty, .occupied, .replay-empty, .replay-occupied {
     border: 1px solid #d3d3d3;
-    width: 18.85714px;
-    height: 18.85714px;
-    line-height: 18.85714px;
+    width: 18.8571428571px;
+    height: 18.8571428571px;
+    line-height: 18.8571428571px;
   }
 
   .empty.droppable .inner, .empty:not(.droppable) .inner, .occupied.draggable .inner, .occupied:not(.draggable) .inner, .replay-empty .inner, .replay-occupied .inner {
-    width: 15.17143px;
-    height: 15.17143px;
-    line-height: 15.17143px;
-    top: 0.84286px;
-    left: 0.84286px;
+    width: 15.1714285714px;
+    height: 15.1714285714px;
+    line-height: 15.1714285714px;
+    top: 0.8428571429px;
+    left: 0.8428571429px;
     box-shadow: 4px 4px 4px #888888;
   }
 
@@ -255,17 +255,17 @@ button:hover {
 
   .outside, .empty, .occupied, .replay-empty, .replay-occupied {
     border: 1px solid #d3d3d3;
-    width: 23.57143px;
-    height: 23.57143px;
-    line-height: 23.57143px;
+    width: 23.5714285714px;
+    height: 23.5714285714px;
+    line-height: 23.5714285714px;
   }
 
   .empty.droppable .inner, .empty:not(.droppable) .inner, .occupied.draggable .inner, .occupied:not(.draggable) .inner, .replay-empty .inner, .replay-occupied .inner {
-    width: 19.41429px;
-    height: 19.41429px;
-    line-height: 19.41429px;
-    top: 1.07857px;
-    left: 1.07857px;
+    width: 19.4142857143px;
+    height: 19.4142857143px;
+    line-height: 19.4142857143px;
+    top: 1.0785714286px;
+    left: 1.0785714286px;
   }
 
   .occupied.draggable .inner .up_move, .occupied.draggable .inner .right_move, .occupied.draggable .inner .down_move, .occupied.draggable .inner .left_move {
@@ -280,17 +280,17 @@ button:hover {
 @media only screen and (min-width: 220px) {
   .outside, .empty, .occupied, .replay-empty, .replay-occupied {
     border: 1px solid #d3d3d3;
-    width: 28.57143px;
-    height: 28.57143px;
-    line-height: 28.57143px;
+    width: 28.5714285714px;
+    height: 28.5714285714px;
+    line-height: 28.5714285714px;
   }
 
   .empty.droppable .inner, .empty:not(.droppable) .inner, .occupied.draggable .inner, .occupied:not(.draggable) .inner, .replay-empty .inner, .replay-occupied .inner {
-    width: 23.91429px;
-    height: 23.91429px;
-    line-height: 23.91429px;
-    top: 1.32857px;
-    left: 1.32857px;
+    width: 23.9142857143px;
+    height: 23.9142857143px;
+    line-height: 23.9142857143px;
+    top: 1.3285714286px;
+    left: 1.3285714286px;
   }
 }
 @media only screen and (min-width: 260px) {
@@ -302,17 +302,17 @@ button:hover {
 
   .outside, .empty, .occupied, .replay-empty, .replay-occupied {
     border: 2px solid #d3d3d3;
-    width: 34.28571px;
-    height: 34.28571px;
-    line-height: 34.28571px;
+    width: 34.2857142857px;
+    height: 34.2857142857px;
+    line-height: 34.2857142857px;
   }
 
   .empty.droppable .inner, .empty:not(.droppable) .inner, .occupied.draggable .inner, .occupied:not(.draggable) .inner, .replay-empty .inner, .replay-occupied .inner {
-    width: 27.25714px;
-    height: 27.25714px;
-    line-height: 27.25714px;
-    top: 1.51429px;
-    left: 1.51429px;
+    width: 27.2571428571px;
+    height: 27.2571428571px;
+    line-height: 27.2571428571px;
+    top: 1.5142857143px;
+    left: 1.5142857143px;
   }
 
   .occupied.draggable .inner .up_move, .occupied.draggable .inner .right_move, .occupied.draggable .inner .down_move, .occupied.draggable .inner .left_move {
@@ -332,17 +332,17 @@ button:hover {
 
   .outside, .empty, .occupied, .replay-empty, .replay-occupied {
     border: 2px solid #d3d3d3;
-    width: 40.71429px;
-    height: 40.71429px;
-    line-height: 40.71429px;
+    width: 40.7142857143px;
+    height: 40.7142857143px;
+    line-height: 40.7142857143px;
   }
 
   .empty.droppable .inner, .empty:not(.droppable) .inner, .occupied.draggable .inner, .occupied:not(.draggable) .inner, .replay-empty .inner, .replay-occupied .inner {
-    width: 33.04286px;
-    height: 33.04286px;
-    line-height: 33.04286px;
-    top: 1.83571px;
-    left: 1.83571px;
+    width: 33.0428571429px;
+    height: 33.0428571429px;
+    line-height: 33.0428571429px;
+    top: 1.8357142857px;
+    left: 1.8357142857px;
   }
 
   .occupied.draggable .inner .up_move, .occupied.draggable .inner .right_move, .occupied.draggable .inner .down_move, .occupied.draggable .inner .left_move {
@@ -361,17 +361,17 @@ button:hover {
 
   .outside, .empty, .occupied, .replay-empty, .replay-occupied {
     border: 2px solid #d3d3d3;
-    width: 45.71429px;
-    height: 45.71429px;
-    line-height: 45.71429px;
+    width: 45.7142857143px;
+    height: 45.7142857143px;
+    line-height: 45.7142857143px;
   }
 
   .empty.droppable .inner, .empty:not(.droppable) .inner, .occupied.draggable .inner, .occupied:not(.draggable) .inner, .replay-empty .inner, .replay-occupied .inner {
-    width: 37.54286px;
-    height: 37.54286px;
-    line-height: 37.54286px;
-    top: 2.08571px;
-    left: 2.08571px;
+    width: 37.5428571429px;
+    height: 37.5428571429px;
+    line-height: 37.5428571429px;
+    top: 2.0857142857px;
+    left: 2.0857142857px;
   }
 }
 @media only screen and (min-width: 380px) {
@@ -383,17 +383,17 @@ button:hover {
 
   .outside, .empty, .occupied, .replay-empty, .replay-occupied {
     border: 2px solid #d3d3d3;
-    width: 50.71429px;
-    height: 50.71429px;
-    line-height: 50.71429px;
+    width: 50.7142857143px;
+    height: 50.7142857143px;
+    line-height: 50.7142857143px;
   }
 
   .empty.droppable .inner, .empty:not(.droppable) .inner, .occupied.draggable .inner, .occupied:not(.draggable) .inner, .replay-empty .inner, .replay-occupied .inner {
-    width: 42.04286px;
-    height: 42.04286px;
-    line-height: 42.04286px;
-    top: 2.33571px;
-    left: 2.33571px;
+    width: 42.0428571429px;
+    height: 42.0428571429px;
+    line-height: 42.0428571429px;
+    top: 2.3357142857px;
+    left: 2.3357142857px;
   }
 
   button {
@@ -405,17 +405,17 @@ button:hover {
 @media only screen and (min-width: 420px) {
   .outside, .empty, .occupied, .replay-empty, .replay-occupied {
     border: 3px solid #d3d3d3;
-    width: 55.71429px;
-    height: 55.71429px;
-    line-height: 55.71429px;
+    width: 55.7142857143px;
+    height: 55.7142857143px;
+    line-height: 55.7142857143px;
   }
 
   .empty.droppable .inner, .empty:not(.droppable) .inner, .occupied.draggable .inner, .occupied:not(.draggable) .inner, .replay-empty .inner, .replay-occupied .inner {
-    width: 44.74286px;
-    height: 44.74286px;
-    line-height: 44.74286px;
-    top: 2.48571px;
-    left: 2.48571px;
+    width: 44.7428571429px;
+    height: 44.7428571429px;
+    line-height: 44.7428571429px;
+    top: 2.4857142857px;
+    left: 2.4857142857px;
   }
 
   .occupied.draggable .inner .up_move, .occupied.draggable .inner .right_move, .occupied.draggable .inner .down_move, .occupied.draggable .inner .left_move {
@@ -432,17 +432,17 @@ button:hover {
 
   .outside, .empty, .occupied, .replay-empty, .replay-occupied {
     border: 3px solid #d3d3d3;
-    width: 60.71429px;
-    height: 60.71429px;
-    line-height: 60.71429px;
+    width: 60.7142857143px;
+    height: 60.7142857143px;
+    line-height: 60.7142857143px;
   }
 
   .empty.droppable .inner, .empty:not(.droppable) .inner, .occupied.draggable .inner, .occupied:not(.draggable) .inner, .replay-empty .inner, .replay-occupied .inner {
-    width: 49.24286px;
-    height: 49.24286px;
-    line-height: 49.24286px;
-    top: 2.73571px;
-    left: 2.73571px;
+    width: 49.2428571429px;
+    height: 49.2428571429px;
+    line-height: 49.2428571429px;
+    top: 2.7357142857px;
+    left: 2.7357142857px;
   }
 
   .occupied.draggable .inner .up_move, .occupied.draggable .inner .right_move, .occupied.draggable .inner .down_move, .occupied.draggable .inner .left_move {
@@ -463,17 +463,17 @@ button:hover {
 
   .outside, .empty, .occupied, .replay-empty, .replay-occupied {
     border: 3px solid #d3d3d3;
-    width: 65.71429px;
-    height: 65.71429px;
-    line-height: 65.71429px;
+    width: 65.7142857143px;
+    height: 65.7142857143px;
+    line-height: 65.7142857143px;
   }
 
   .empty.droppable .inner, .empty:not(.droppable) .inner, .occupied.draggable .inner, .occupied:not(.draggable) .inner, .replay-empty .inner, .replay-occupied .inner {
-    width: 53.74286px;
-    height: 53.74286px;
-    line-height: 53.74286px;
-    top: 2.98571px;
-    left: 2.98571px;
+    width: 53.7428571429px;
+    height: 53.7428571429px;
+    line-height: 53.7428571429px;
+    top: 2.9857142857px;
+    left: 2.9857142857px;
   }
 
   button {
@@ -488,17 +488,17 @@ button:hover {
 
   .outside, .empty, .occupied, .replay-empty, .replay-occupied {
     border: 4px solid #d3d3d3;
-    width: 68.57143px;
-    height: 68.57143px;
-    line-height: 68.57143px;
+    width: 68.5714285714px;
+    height: 68.5714285714px;
+    line-height: 68.5714285714px;
   }
 
   .empty.droppable .inner, .empty:not(.droppable) .inner, .occupied.draggable .inner, .occupied:not(.draggable) .inner, .replay-empty .inner, .replay-occupied .inner {
-    width: 54.51429px;
-    height: 54.51429px;
-    line-height: 54.51429px;
-    top: 3.02857px;
-    left: 3.02857px;
+    width: 54.5142857143px;
+    height: 54.5142857143px;
+    line-height: 54.5142857143px;
+    top: 3.0285714286px;
+    left: 3.0285714286px;
   }
 
   button {
@@ -512,17 +512,17 @@ button:hover {
 
   .outside, .empty, .occupied, .replay-empty, .replay-occupied {
     border: 5px solid #d3d3d3;
-    width: 72.85714px;
-    height: 72.85714px;
-    line-height: 72.85714px;
+    width: 72.8571428571px;
+    height: 72.8571428571px;
+    line-height: 72.8571428571px;
   }
 
   .empty.droppable .inner, .empty:not(.droppable) .inner, .occupied.draggable .inner, .occupied:not(.draggable) .inner, .replay-empty .inner, .replay-occupied .inner {
-    width: 56.57143px;
-    height: 56.57143px;
-    line-height: 56.57143px;
-    top: 3.14286px;
-    left: 3.14286px;
+    width: 56.5714285714px;
+    height: 56.5714285714px;
+    line-height: 56.5714285714px;
+    top: 3.1428571429px;
+    left: 3.1428571429px;
   }
 }
 @media only screen and (min-width: 620px) {
@@ -532,17 +532,17 @@ button:hover {
 
   .outside, .empty, .occupied, .replay-empty, .replay-occupied {
     border: 6px solid #d3d3d3;
-    width: 77.14286px;
-    height: 77.14286px;
-    line-height: 77.14286px;
+    width: 77.1428571429px;
+    height: 77.1428571429px;
+    line-height: 77.1428571429px;
   }
 
   .empty.droppable .inner, .empty:not(.droppable) .inner, .occupied.draggable .inner, .occupied:not(.draggable) .inner, .replay-empty .inner, .replay-occupied .inner {
-    width: 58.62857px;
-    height: 58.62857px;
-    line-height: 58.62857px;
-    top: 3.25714px;
-    left: 3.25714px;
+    width: 58.6285714286px;
+    height: 58.6285714286px;
+    line-height: 58.6285714286px;
+    top: 3.2571428571px;
+    left: 3.2571428571px;
   }
 
   button {
