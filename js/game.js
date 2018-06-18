@@ -39,14 +39,14 @@ $(function() {
 
 		$restart.attr('disabled', 'disabled');
 		$show_me.attr('disabled', 'disabled');
-		handleNextMove();
+		handleShowMeNextMove();
 	});
 
 	/* ----------------------------------- */
 	/* Moves                               */
 	/* ----------------------------------- */
 
-	function handleNextMove() {
+	function handleShowMeNextMove() {
 		var move = APP.model.victories.getNextMove();
 		var from = $('.js--board div[data-item-row="' + move.from.row + '"][data-item-column="' + move.from.column + '"]');
 		var via = $('.js--board div[data-item-row="' + move.via.row + '"][data-item-column="' + move.via.column + '"]');
@@ -85,7 +85,7 @@ $(function() {
 				$restart.removeAttr('disabled');
 				$show_me.removeAttr('disabled');
 			} else {
-				handleNextMove();
+				handleShowMeNextMove();
 			}
 		}, delay);
 	}
@@ -228,7 +228,7 @@ $(function() {
 //                                $show_me.removeAttr('disabled');
 //                            }
 //                            else {
-//                                handleNextMove();
+//                                handleShowMeNextMove();
 //                            }
 //                        }, 150);
 //                    }, 150);
