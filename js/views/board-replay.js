@@ -6,10 +6,9 @@ APP.views.replay = (function() {
 
 	return {
 		getTemplate: function() {
-			return
-				`<div data-item-row={{idx}} data-item-column={{idy}} class="{{tile}}">
-						<div class="inner"></div>
-				</div>`;
+			return '<div data-item-row={{idx}} data-item-column={{idy}} class="{{tile}}">\
+						<div class="inner"></div>\
+				</div>';
 		},
 
 		//    getTemplate: function() {
@@ -17,10 +16,9 @@ APP.views.replay = (function() {
 		//    },
 
 		getTemplateOutside: function() {
-			return 
-				`<div data-item-row={{idx}} data-item-column={{idy}} class="outside">
-					<div></div>
-				</div>`;
+			return '<div data-item-row={{idx}} data-item-column={{idy}} class="outside">\
+					<div></div>\
+				</div>';
 		},
 
 		buildItem: function(idx, idy, item) {

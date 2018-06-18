@@ -9,20 +9,18 @@ APP.views.board = (function() {
 * column template for a legal tile.
 */
 		getTemplate: function() {
-			return 
-				`<div data-item-row={{idx}} data-item-column={{idy}} class="{{tile}}">
-						<div class="inner" {{dnd}}>{{arrows}}</div>
-				</div>`;
+			return '<div data-item-row={{idx}} data-item-column={{idy}} class="{{tile}}">\
+						<div class="inner" {{dnd}}>{{arrows}}</div>\
+				</div>';
 		},
 
 /*
 * column template for a non-legal tile.
 */
 		getTemplateOutside: function() {
-			return 
-				`<div data-item-row={{idx}} data-item-column={{idy}} class="outside">
-					<div></div>
-				</div>`;
+			return '<div data-item-row={{idx}} data-item-column={{idy}} class="outside">\
+					<div></div>\
+				</div>';
 		},
 
 /*
