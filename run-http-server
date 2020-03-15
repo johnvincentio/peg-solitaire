@@ -1,0 +1,8 @@
+#!/bin/sh
+#
+#  script to run http server
+#
+PORT="9501"
+echo "Run HTTP server on port $PORT"
+#
+run-http-server $PORT .

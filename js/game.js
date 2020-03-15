@@ -7,6 +7,11 @@ var APP = APP || {};
 APP.model = APP.model || {};
 APP.views = APP.views || {};
 
+APP.keys = {
+	SERVER_URL: 'https://www.peg-solitaire.johnvincent.io/api',
+	// SERVER_URL: 'http://localhost:9417/solution',
+};
+
 $(function() {
 	'use strict';
 
@@ -33,13 +38,15 @@ $(function() {
 	});
 
 	$main.on('show-me', function() {
-		APP.model.victories.getNextVictory();
-		APP.model.collection.init();
-		APP.views.replay.renderBoard(APP.model.collection.rows, $board);
+		APP.model.victories.getNextVictory(function() {
+			APP.model.collection.init();
+			APP.views.replay.renderBoard(APP.model.collection.rows, $board);
+	
+			$restart.attr('disabled', 'disabled');
+			$show_me.attr('disabled', 'disabled');
+			handleShowMeNextMove();
+		});
 
-		$restart.attr('disabled', 'disabled');
-		$show_me.attr('disabled', 'disabled');
-		handleShowMeNextMove();
 	});
 
 	/* ----------------------------------- */

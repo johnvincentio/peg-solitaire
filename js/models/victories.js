@@ -13,7 +13,30 @@ APP.model.victories = (function() {
 		isNextMove: function() {
 			return this.currentMove >= this.victory.length - 1 ? false : true;
 		},
-		getNextVictory: function() {
+
+		getNextVictory: function(callback) {
+			console.log('>>> getNextVictory');
+			var that = this;
+			var request = $.ajax({
+				url: APP.keys.SERVER_URL,
+				// data: options,
+				dataType: 'json',
+				type: 'GET',
+			});
+			request.done(function(data) {
+				// console.log('addData');
+				that.victory = data;
+				that.currentMove = -1;
+				callback();
+			});
+			request.fail(function(jqXHR, status) {
+				console.log('ajax get failed; ' + status);
+				that.getNextVictoryOriginal();
+				callback();
+			});
+			console.log('<<< getNextVictory');
+		},
+		getNextVictoryOriginal: function() {
 			this.currentVictory = this.randomIntBetween(0, this.data.length - 1);
 			this.victory = JSON.parse(JSON.stringify(this.data[this.currentVictory]));
 			this.currentMove = -1;
